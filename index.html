@@ -20,13 +20,15 @@
            font-optical-sizing: auto;
            font-weight: <weight>;
            font-style: normal;
+        }
         .color{
           background-color: #ABEF5F;
         }
         .color-1{
           background-color: #bbde94;
         }
-}
+        
+        
 
     </style>
 
@@ -93,8 +95,8 @@
       <p >The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
     </div>
 
-    <div class="flex items-center justify-center text-center">
-      <button class="btn  color-1 rounded-full ">View Details<div class="color rounded-full h-7 w-7 text-center relative">
+    <div class="lg:flex  items-center justify-center text-center">
+      <button class="btn w-11/12 lg:w-auto color-1 rounded-full ">View Details<div class="color rounded-full h-7 w-7 text-center relative">
         <i class="fa-solid fa-arrow-right absolute -rotate-45 top-2 left-2"></i>
       </div></i></button>
     </div>
@@ -166,11 +168,81 @@
         </div>
       </div>
       <!--Our Latest Portfolio-->
-      <div class=" text-center justify-center items-center">
-        <a class="btn bg-slate-200  rounded-full"><i class="fa-solid fa-arrow-right"></i>Explore our Latest works</a>
-        <h2 class="font-bold text-3xl">Our Largest Portfolio</h2>
-        <p>The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+      <div class=" text-center justify-center items-center pt-9 pb-6">
+        <a class="btn bg-slate-200  rounded-full w-75 h-0"><i class="fa-solid fa-arrow-right"></i>Explore our Latest works</a>
+        <h2 class="font-bold text-3xl mt-6">Our Largest Portfolio</h2>
+        <p class="mt-6 mb-6">The barn house captivates with its blend of rustic charm and modern sophistication,<br> featuring weathered wood, sleek metal accents.</p>
       </div>
+      <!--Portfolio card-->
+
+
+      <!--Discussion section-->
+      <section class="bg-[url('/assets/bg.jpg')]">
+        <div class="text-center justify-center items-center">
+          <a class="btn bg-slate-200 rounded-full mt-5">Let's Connect</a>
+          <h2 class="font-bold text-3xl pt-5 pb-5">Let’s Discuss Next Project</h2>
+          <p class="pb-5">The barn house captivates with its blend of rustic charm and modern sophistication,<br> featuring weathered wood, sleek metal accents.</p>
+        </div>
+        <form class="lg:mx-52 " action="#" method="post">
+          <div class="mb-4 lg:flex gap-5 ml-4 mr-7">
+              <label for="first-name" class="block text-gray-700 font-medium mb-2"></label>
+              <input type="text" id="first-name" placeholder="First Name*" name="first-name" class="lg:w-1/2 w-full p-3 bg-white border rounded-3xl" required>
+              <label for="last-name" class="block text-gray-700 font-medium mb-2"></label>
+              <input type="text" id="last-name" placeholder="Last Name*" name="last-name" class="lg:w-1/2 w-full p-3 border rounded-3xl " required>
+          </div>
+          
+          <div class="mb-4 lg:flex gap-5 ml-4 mr-7">
+            <label for="first-name" class="block text-gray-700 font-medium mb-2"></label>
+            <input type="text" id="first-name" placeholder="Phone Number*" name="first-name" class="lg:w-1/2 w-full p-3 bg-white border rounded-3xl" required>
+            <label for="last-name" class="block text-gray-700 font-medium mb-2"></label>
+            <input type="text" id="last-name" placeholder="Email Number*" name="last-name" class="lg:w-1/2 w-full p-3 border rounded-3xl " required>
+        </div>
+          <div class="mb-4 lg:ml-8 ml-5 mr-7 ">
+              <label for="message" class="block text-gray-700 font-medium mb-2"></label>
+              <textarea id="message" placeholder="Write Your Message Here" name="message" rows="4" class="w-full  p-3 border rounded-3xl  " required></textarea>
+          </div>
+          <div class="lg:flex inline text-center justify-center items-center">
+            <div class="text-center w-11/12 mx-4  items-center justify-center mb-20 rounded-full btn bg-lime-400">
+              <a class=" rounded-full">Send Mail </a> <a class="bg-black rounded-full h-7 w-7 text-center relative">
+                <i class="fa-solid fa-arrow-right text-white absolute -rotate-45 top-2 left-2"></i>
+              </a>
+             </div>
+           </div>
+          
+            
+          
+          
+       </form>
+      </section>
+
     <!--Foooter section-->
+    <footer class="bg-black pt-10">
+       <div class="flex text-center justify-center gap-3 pt-16">
+        <div class=" color rounded-full h-7 w-7 text-center relative">
+          <i class="fa-solid fa-arrow-right absolute -rotate-45 top-1 left-2"></i>
+        </div>
+        <h2 class="font-bold text-white text-xl">Rinterio</h2>
+        
+       </div>
+
+       <p class="text-gray-500 text-center justify-center pt-5">The barn house captivates with its blend of rustic charm and modern sophistication,<br> featuring weathered wood, sleek metal accents.</p>
+       <div class="pt-6 pb-6">
+        <ul class="lg:flex justify-center text-center items-center gap-32 text-slate-400">
+          <li><a href="">Home</a></li>
+          <li><a href="">Services</a></li>
+          <li><a href="">Portfolio</a></li>
+          <li><a href="">Blogs</a></li>
+          <li><a href="">Contact Us</a></li>
+        </ul>
+       </div>
+         
+       <div class="lg:flex inline text-center justify-center items-center">
+        <div class="text-center w-11/12 mx-4 lg:w-auto items-center justify-center mb-20 mt-7 rounded-full btn bg-lime-400">
+          <a class=" rounded-full">Book Consult </a> <a class="bg-black rounded-full h-7 w-7 text-center relative">
+            <i class="fa-solid fa-arrow-right text-white absolute -rotate-45 top-2 left-2"></i>
+          </a>
+         </div>
+       </div>
+    </footer>
 </body>
 </html>
